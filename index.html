@@ -5,8 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock paper scissors game</title>
   <link rel="icon" href="./icons/rock-paper-scissors.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="game">
+      <!--game-top-->
+      <div class="game-info">
+        <div class="player-score-display">
+          You : <span class="player-score"></span>
+        </div>
+        <div class="computer-score-display">
+          Computer : <span class="computer-score"></span>
+        </div>
+      </div>
+      <!--game-top-->
+
+      <!--game middile-->
+      <div class="game-table">
+        <div class="player-side-choice">
+          <!--choice showen when selected-->
+        </div>
+        <div class="computer-side-choice">
+          <!--choice showen dynamically-->
+        </div>
+      </div>
+      <!--game middile-->
+
+      <!--game controlls-->
+      <div class="game-controlls">
+        <div class="btn btn-outline-secondary rock"></div>
+        <div class="btn btn-outline-secondary paper"></div>
+        <div class="btn btn-outline-secondary scissors"></div>
+      </div>
+      <!--game controlls-->
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
