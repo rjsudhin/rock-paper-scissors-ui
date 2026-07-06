@@ -47,6 +47,13 @@ image {
   /* game middile */
   .game-table {
     min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      width: 150px;
+      height: 150px;
+    }
   }
   /* game middile */
 
