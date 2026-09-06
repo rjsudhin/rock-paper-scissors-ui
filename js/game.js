@@ -26,6 +26,7 @@ function gettingGameChoices(player) {
 }
 
 function checkingGame(player, computer) {
+  // player game winning logics
   if (
     (player === 'rock' && computer === 'scissor') ||
     (player === 'paper' && computer === 'rock') || 
@@ -33,6 +34,7 @@ function checkingGame(player, computer) {
   ) {
     console.log('you win ')
   } else {
+    // other ways computer going to wins!
     console.log('computer wins')
   }
 
