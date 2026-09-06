@@ -21,6 +21,20 @@ function gettingGameChoices(player) {
   console.log(`You selected : ${playerChoice}`)
   console.log(`Computer selected : ${computerChoice}`)
   performningChoiceUI(playerChoice, computerChoice)
+  checkingGame(playerChoice, computerChoice)
+  
+}
+
+function checkingGame(player, computer) {
+  if (
+    (player === 'rock' && computer === 'scissor') ||
+    (player === 'paper' && computer === 'rock') || 
+    (player === 'scissors' && computer === 'paper')
+  ) {
+    console.log('you win ')
+  } else {
+    console.log('computer wins')
+  }
 
 }
 
