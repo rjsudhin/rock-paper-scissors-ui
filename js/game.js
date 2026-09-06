@@ -2,6 +2,9 @@ const gameControlls = document.querySelector('.game-controlls')
 const playerSideChoice = document.querySelector('.player-side-choice')
 const computerSideChoice = document.querySelector('.computer-side-choice') 
 
+let playerScore = 0
+let computerScore = 0
+
 // any game button clicks
 gameControlls.addEventListener('click', (e) => {
   // choice selection only works with click to icon's center
@@ -32,10 +35,16 @@ function checkingGame(player, computer) {
     (player === 'paper' && computer === 'rock') || 
     (player === 'scissors' && computer === 'paper')
   ) {
+    // increasing player score ++ 
+    playerScore++
     console.log('you win ')
+    console.log(`player point now ${playerScore}`)
   } else {
     // other ways computer going to wins!
+    // increasing computer score ++
+    computerScore++
     console.log('computer wins')
+    console.log(`computer point now ${computerScore}`)
   }
 
 }
