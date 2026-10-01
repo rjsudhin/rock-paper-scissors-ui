@@ -2,6 +2,9 @@ const gameControlls = document.querySelector('.game-controlls')
 const playerSideChoice = document.querySelector('.player-side-choice')
 const computerSideChoice = document.querySelector('.computer-side-choice') 
 
+const playerScoreDisplay = document.querySelector('.player-score')
+const computerScoreDisplay = document.querySelector('.computer-score')
+
 let playerScore = 0
 let computerScore = 0
 
@@ -13,6 +16,8 @@ gameControlls.addEventListener('click', (e) => {
     computerSideChoice.innerHTML = ''
     const playerChoice = e.target.id 
     gettingGameChoices(playerChoice)
+    showingPlayerScore()
+    
   
   }
 })
@@ -47,6 +52,12 @@ function checkingGame(player, computer) {
     console.log(`computer point now ${computerScore}`)
   }
 
+}
+
+// each time showing the score on the game table top
+function showingPlayerScore() {
+  playerScoreDisplay.textContent = playerScore
+  computerScoreDisplay.textContent = computerScore
 }
 
 function performningChoiceUI(playerSide, computerSide) {
